@@ -5,18 +5,24 @@ This repository contains a simple in-memory key-value database implemented in C+
 ## How to Use
 
 1. Clone the repository to your local machine:
-```git clone https://github.com/your_username/InMemoryDB.git```
+```bash
+git clone https://github.com/your_username/InMemoryDB.git
+```
 
 
-2. Compile the code using g++:
-```g++ -std=c++14 -o myprogram InMemoryDB.cpp main.cpp```
+3. Compile the code using g++:
+```bash
+g++ -std=c++14 -o myprogram InMemoryDB.cpp main.cpp
+```
 
 
-3. Run the program:
-```./myprogram```
+5. Run the program:
+```bash
+./myprogram
+```
 
 
-4. Follow the on-screen instructions to interact with the InMemoryDB. You can choose options to get values, start transactions, put values, commit transactions, rollback transactions, and exit the program.
+7. Follow the on-screen instructions to interact with the InMemoryDB. You can choose options to get values, start transactions, put values, commit transactions, rollback transactions, and exit the program.
 
 ## Assignment Improvement
 
