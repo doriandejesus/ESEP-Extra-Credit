@@ -8,7 +8,7 @@ int main() {
     InMemoryDB inmemoryDB;
 
     char choice;
-    cout << "Welcome to your database manager!\n";
+    cout << "Welcome to your database manager!\n\n";
 
     do {
         cout << "1. Get value\n";
@@ -26,7 +26,13 @@ int main() {
                 string key;
                 cout << "Enter key: ";
                 cin >> key;
-                cout << "Value: " << inmemoryDB.get(key) << endl;
+                if (inmemoryDB.get(key) == -1) {
+                    cout << "Value: null" << endl;
+                }
+                else {
+                    cout << "Value: " << inmemoryDB.get(key) << endl;
+
+                }
                 break;
             }
             case '2':
@@ -36,7 +42,7 @@ int main() {
             case '3': {
                 string key;
                 int value;
-                cout << "Enter key and value: ";
+                cout << "Enter key and value (<key> ENTER <value> ENTER): ";
                 cin >> key >> value;
                 inmemoryDB.put(key, value);
                 cout << "Value set.\n";
